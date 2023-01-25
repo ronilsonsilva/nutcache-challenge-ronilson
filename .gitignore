@@ -15,3 +15,4 @@
 /src/services/Nutcache.Infra.Data/obj
 /src/services/Nutcache.Infra.Ioc/bin/Debug/net7.0
 /src/services/Nutcache.Infra.Ioc/obj
+/src/clients/emplyee-web-app/node_modules
