@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Nutcache/FileContentIndex
+/.vs
+/src/services/.vs
+/src/services/Nutcache.Api/bin/Debug/net7.0
+/src/services/Nutcache.Api/obj
+/src/services/Nutcache.Application/bin/Debug/net7.0
+/src/services/Nutcache.Application/obj
+/src/services/Nutcache.Employee.Domain/bin/Debug/net7.0
+/src/services/Nutcache.Employee.Domain/obj
+/src/services/Nutcache.Infra.Data/bin/Debug/net7.0
+/src/services/Nutcache.Infra.Data/obj
+/src/services/Nutcache.Infra.Ioc/bin/Debug/net7.0
+/src/services/Nutcache.Infra.Ioc/obj
