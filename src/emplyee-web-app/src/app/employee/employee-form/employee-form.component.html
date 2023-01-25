@@ -1,0 +1,84 @@
+<table>
+  <tr>
+    <td>
+      <h1 class="titulo">{{ title }}</h1>
+    </td>
+    <td>
+      <button mat-icon-button (click)="onClickBack()" class="linkRetornar">
+        <mat-icon>keyboard_backspace</mat-icon> Back
+      </button>
+    </td>
+  </tr>
+</table>
+<div class="example-container">
+  <div class="form-container">
+    <form [formGroup]="form">
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="name" type="text" maxlength="256" required>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>email</mat-label>
+        <input matInput placeholder="Placeholder" formControlName="email" type="text" maxlength="512" required>
+      </mat-form-field>
+      <table>
+        <tr>
+          <td>
+            <mat-form-field appearance="fill">
+              <mat-label>Birth Date</mat-label>
+              <input matInput [matDatepicker]="picker" formControlName="birthDate">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="fill">
+              <mat-label>Gender</mat-label>
+              <select matNativeControl required formControlName="gender">
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+              </select>
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td>
+            <mat-form-field appearance="fill">
+              <mat-label>Start Date</mat-label>
+              <input matInput [matDatepicker]="picker_startDate" formControlName="startDate">
+              <mat-datepicker-toggle matSuffix [for]="picker_startDate"></mat-datepicker-toggle>
+              <mat-datepicker #picker_startDate></mat-datepicker>
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field appearance="fill">
+              <mat-label>team</mat-label>
+              <select matNativeControl required formControlName="team">
+                <option></option>
+                <option value="1">Mobile</option>
+                <option value="2">Frontend</option>
+                <option value="3">Backend</option>
+              </select>
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+
+    </form>
+
+    <table>
+      <tr>
+        <td>
+          <section>
+            <button mat-raised-button color="primary" class="right btn-save" (click)="save()">
+              <mat-icon>save</mat-icon> Save
+            </button>
+          </section>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
